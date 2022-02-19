@@ -6,13 +6,11 @@ public class Application {
     public static void main(String[] args) {
 
         Kotik Vasya = new Kotik();
+
+
         int count1 = Kotik.count;
-        Vasya.setMeow("мяу");
-        Vasya.setWeight(3000);
-        Vasya.setPrettiness(10);
-        Vasya.setName("Вася");
-        Vasya.setFood("китекат");
-        Vasya.setSatiety();
+
+
 
 
         Kotik Boris = new Kotik();
@@ -21,7 +19,7 @@ public class Application {
         Boris.setWeight(4000);
         Boris.setPrettiness(10);
         Boris.setName("Борис");
-        Boris.setFood("вискас");
+
         if (Boris.getMeow().equals(Vasya.getMeow())) {
             System.out.println("котики мурлычат одинаково");
         }

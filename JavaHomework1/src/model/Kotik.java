@@ -17,7 +17,12 @@ public class Kotik {
     private int  prettiness;
     //private int method1;
 
-
+    /*void setKotik (int weight, String name, String meow, int prettiness) {
+        this.meow = meow;
+        this.weight = weight;
+        this.name= name;
+        this.prettiness = prettiness
+    }*/
     public static int count;
 
     public int getWeight() {
@@ -28,7 +33,8 @@ public class Kotik {
         return name;
     }
     public String getMeow() {
-        return meow.toLowerCase();
+       // return meow.toLowerCase();
+        return meow;
     }
     public String getFood() {
         return food;
@@ -41,7 +47,8 @@ public class Kotik {
     }
 
     public void setMeow (String newMeow){
-        meow = newMeow.toLowerCase();
+        //meow = newMeow.toLowerCase();
+        meow = newMeow;
     }
 
     public void setWeight (int newWeight){
@@ -75,7 +82,7 @@ public class Kotik {
 
     public boolean liveAnotherDay() {
 
-        for (int i = 1; i <= 24; i++) {
+        for (int i = 1; i <= 30; i++) {
         double method = 1 + 6 * Math.random();
         int method1 = (int) Math.round(method);
         switch (method1) {
